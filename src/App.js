@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import MainPage from './FirstPage';
+import NavBar from './NavBar';
+import Difference from './SecondContainer';
+import Testimonials from './ThirdContainer';
+import CallToAction from './CTA';
+import Footer from './Footer';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<p>
+				<NavBar />
+				<MainPage />
+				<Difference />
+				<Testimonials />
+				<CallToAction />
+				<Footer />
+			</p>
+		</div>
+	);
 }
 
 export default App;
